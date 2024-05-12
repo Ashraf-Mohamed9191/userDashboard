@@ -1,0 +1,25 @@
+<button class="btn btn-main mt-4" (click)="goBack()">
+  <i class="fa-solid fa-arrow-left"></i> Go Back
+</button>
+<section class="w-75 h-50 mx-auto py-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-6">
+      <div class="rounded-3 overflow-hidden rounded-circle shadow-lg">
+        <img
+          [src]="userDetails.avatar"
+          [alt]="userDetails.first_name"
+          class="w-100"
+        />
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="p-4 text-center">
+        <p class="h3"><span>First Name :</span> {{ userDetails.first_name }}</p>
+        <p class="h3"><span>Last Name :</span> {{ userDetails.last_name }}</p>
+        <p class="h3"><span>id =</span> {{ userDetails.id }}</p>
+        <h4><span>Email : </span>{{ userDetails.email }}</h4>
+      </div>
+    </div>
+  </div>
+</section>
